@@ -1,0 +1,40 @@
+{
+  "wechatConfig": {
+    "store": "FileStore_/Users/pw/Desktop/work/F5-HUPU/server/wechat-info.json"
+  },
+  "globalToken": {
+    "count": 1,
+    "modifyDate": "2019-05-17T13:29:31.051Z",
+    "accessToken": "21_c63bBTebeWZZPk7X1FEepoeowkx0Qx7ZirCvaRID8P7nrSmB5VZJS37bVdX9JPurHj7p42RIMus7eCP9ZQopFKnMR8i9P83B04dF8y2m9mSnBENLLSZEk3e6qAtWPhZHJTOuF7j61PmnuNUBJCHgAJABUZ",
+    "jsapi_ticket": "LIKLckvwlJT9cWIhEQTwfKVmmgOrpyxxaJpfDB6tgLiHuhYH4L4yt5rgXH8u1EKmeogjBmZyDwcz9v10EwYRrA"
+  },
+  "urls": {
+    "http://192.168.3.130:1234/?from=singlemessage&isappinstalled=0": {
+      "jsapi_ticket": "LIKLckvwlJT9cWIhEQTwfKVmmgOrpyxxaJpfDB6tgLiHuhYH4L4yt5rgXH8u1EKmeogjBmZyDwcz9v10EwYRrA",
+      "nonceStr": "h7s80zu6w1t",
+      "timestamp": "1558099771",
+      "url": "http://192.168.3.130:1234/?from=singlemessage&isappinstalled=0",
+      "signature": "2992cc67f84ec27a742023bc5970fc38cd10c097",
+      "accessToken": "21_c63bBTebeWZZPk7X1FEepoeowkx0Qx7ZirCvaRID8P7nrSmB5VZJS37bVdX9JPurHj7p42RIMus7eCP9ZQopFKnMR8i9P83B04dF8y2m9mSnBENLLSZEk3e6qAtWPhZHJTOuF7j61PmnuNUBJCHgAJABUZ",
+      "signatureName": "http://192.168.3.130:1234/?from=singlemessage&isappinstalled=0",
+      "createDate": "2019-05-17T13:29:31.052Z",
+      "modifyDate": "2019-05-17T13:29:31.052Z",
+      "updated": true
+    },
+    "http://192.168.3.130:1234/": {
+      "jsapi_ticket": "LIKLckvwlJT9cWIhEQTwfKVmmgOrpyxxaJpfDB6tgLiHuhYH4L4yt5rgXH8u1EKmeogjBmZyDwcz9v10EwYRrA",
+      "nonceStr": "glwsdo1y5i",
+      "timestamp": "1558100123",
+      "url": "http://192.168.3.130:1234/",
+      "signature": "b938b3bfe0b00f60090536479b9cceff6474c747",
+      "accessToken": "21_c63bBTebeWZZPk7X1FEepoeowkx0Qx7ZirCvaRID8P7nrSmB5VZJS37bVdX9JPurHj7p42RIMus7eCP9ZQopFKnMR8i9P83B04dF8y2m9mSnBENLLSZEk3e6qAtWPhZHJTOuF7j61PmnuNUBJCHgAJABUZ",
+      "signatureName": "http://192.168.3.130:1234/",
+      "createDate": "2019-05-17T13:35:23.005Z",
+      "modifyDate": "2019-05-17T13:35:23.005Z",
+      "updated": true
+    }
+  },
+  "oauth": {},
+  "card": {},
+  "mp": {}
+}

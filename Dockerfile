@@ -1,0 +1,28 @@
+FROM ubuntu
+
+USER root
+#网易apt-get镜像
+RUN sed -i 's/http:\/\/archive\.ubuntu\.com\/ubuntu\//http:\/\/mirrors\.163\.com\/ubuntu\//g' /etc/apt/sources.list
+
+RUN apt-get update
+RUN apt-get install -yqq nginx
+RUN apt-get install -y curl
+
+RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
+RUN apt-get update 
+RUN apt-get install -y nodejs
+#设置npm淘宝镜像
+RUN npm config set registry https://registry.npm.taobao.org
+RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
+RUN cnpm install -g pm2
+
+WORKDIR /
+COPY . /src
+# COPY config.release.js /src/config.js
+WORKDIR /src
+RUN cnpm install
+
+# EXPOSE 80
+
+# CMD ["sh", "start.sh"]
+CMD [ "pm2-docker", "start", "app.js" ]
