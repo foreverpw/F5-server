@@ -11,9 +11,9 @@ module.exports = {
   mongo: {
     uri: 'mongodb://gaokao:57578180@47.101.217.149:28018/gaokao',
   },
-  wxapp: {
-    appid: 'wx7c9f71980a7f94a5',
-    secret: '3f2e9670822b65703f917d7b2f242d01'
+  wxapp: {//hansen geren
+    appid: 'wx8a52275ea33985c9',
+    secret: 'd2aad8eec0e04a7f00ed30a283c83639'
   },
   soap:{
     url:'http://webscrmworkorder.gwmsystem.com:5691/WebChannel/WebChannels.asmx?wsdl'
