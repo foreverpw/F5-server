@@ -14,5 +14,8 @@ module.exports = {
   wxapp: {
     appid: 'wx7c9f71980a7f94a5',
     secret: '3f2e9670822b65703f917d7b2f242d01'
+  },
+  soap:{
+    url:'http://webscrmworkorder.gwmsystem.com:5691/WebChannel/WebChannels.asmx?wsdl'
   }
 };
