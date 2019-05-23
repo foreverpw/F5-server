@@ -23,7 +23,6 @@ var RedisStore = require('connect-redis')(session);
 var app = express();
 
 global.red = redis.createClient(config.redis.port,config.redis.host);
-global.soap = require('soap');
 
 var route = require('./route');
 global.logger = require('./config/winston');
