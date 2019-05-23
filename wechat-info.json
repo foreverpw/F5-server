@@ -3,7 +3,10 @@
     "store": "FileStore_/Users/pw/Desktop/work/F5-HUPU/server/wechat-info.json"
   },
   "globalToken": {
-    "count": 0
+    "count": 1,
+    "modifyDate": "2019-05-23T06:39:16.240Z",
+    "accessToken": "21_9_dl59Rk3ZW4LdtzhnxwqIZTsUXiTL2fOfZmWcjlYUvoUPNvhFIQlE-yZqU1XIE7Z5m_05jr-3ZY8tqLZl_yRZX1lJHY3bYIGFOQIdW3GQjf36bxsgBgOxVrxjee2hoOTrx2WEBi2W30wKOxRQXcADAMLS",
+    "jsapi_ticket": "LIKLckvwlJT9cWIhEQTwfKVmmgOrpyxxaJpfDB6tgLhETI8KnqIoZSi6pCrthmG7z2iPg-jZtum_lc9zUY03Ug"
   },
   "urls": {},
   "oauth": {},
