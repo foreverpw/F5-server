@@ -1,7 +1,7 @@
 module.exports = {
   server: {
     port: 12200,
-    allowedDomains: ['http://127.0.0.1:1234','http://192.168.3.130:1234','http://hupu.ksspark.cn','http://hupu-test.ksspark.cn'],
+    allowedDomains: ['http://127.0.0.1:1234','http://192.168.3.130:1234','http://192.168.11.3:1234','http://hupu.ksspark.cn','http://hupu-test.ksspark.cn'],
     session_secret: '!aj@#3EK!*@#jdj42k-dsl!@AFADS!@#}{$SI'
   },
   redis:{
