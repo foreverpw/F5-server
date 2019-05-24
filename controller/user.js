@@ -5,13 +5,14 @@ var config = require('../config.js')
 const soap = require('soap');
 
 exports.submitCRM = function (req, res) {
+  let {phone,name,province,city,shnumber} = req.body
   var url = config.soap.url;
   var saleClueJson = [{
-    "Contact": "18311111111",  //客户手机号
-    "CustomerName": "test",    //客户姓名
-    "Province": "江苏省",     //省
-    "City": "苏州市",             //市
-    "Shnumber": "340204",      //专营店号
+    "Contact": phone,  //客户手机号
+    "CustomerName": name,    //客户姓名
+    "Province": province,     //省
+    "City": city,             //市
+    "Shnumber": shnumber,      //专营店号
     "TypeName": "厂家线索",       //主渠道
     "Channels": "官网",           //二级渠道
     "ChildChannel": "官网活动",    //三级渠道
