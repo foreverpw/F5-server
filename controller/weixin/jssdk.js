@@ -11,6 +11,7 @@ var wechatConfig = {
 const wx = new Wechat(wechatConfig);
 
 exports.getSignature = async function (req, res) {
+  logger.info(`get signature for url:${req.body.url}`)
   let signatureData = await wx.jssdk.getSignature(req.body.url)
   return res.json({ code: ERRORCODE.SUCCESS, data: signatureData });
 };
