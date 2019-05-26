@@ -16,6 +16,7 @@ module.exports = {
     secret: '3f2e9670822b65703f917d7b2f242d01'
   },
   soap:{
-    url:'http://crmvoiceservice.gwmsystem.com:8034/WebChannels.asmx?wsdl'
+    url:'http://crmvoiceservice.gwmsystem.com:8034/WebChannels.asmx?wsdl',
+    identity:'IT2015'
   }
 };

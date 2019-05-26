@@ -34,7 +34,7 @@ exports.submitCRM = function (req, res) {
     }
     let soapHeader = {
       "CustomSoapHeader": {
-        "UserIdentity": "IT2015"
+        "UserIdentity": config.soap.identity
       }
     };
     client.addSoapHeader(soapHeader, 'CustomSoapHeader', 'm', 'http://tempuri.org/');
