@@ -48,7 +48,11 @@ exports.submitCRM = function (req, res) {
         logger.error(err)
         return res.json({code: ERRORCODE.CREATE_FAILED});
       }
-      return res.json({ code: ERRORCODE.SUCCESS, result: result });
+      if(result.SaveChannelWithJsonResult==0){
+        return res.json({ code: ERRORCODE.SUCCESS, result: result });
+      }else{
+        return res.json({ code: ERRORCODE.CREATE_FAILED, result: result });
+      }
     });
   });
 }
