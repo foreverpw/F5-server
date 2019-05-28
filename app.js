@@ -26,6 +26,7 @@ var app = express();
 
 var route = require('./route');
 global.logger = require('./config/winston');
+logger.error({a:1,b:2})
 var morgan = require('morgan')
 app.use(morgan('combined', { stream: global.logger.stream }));
 

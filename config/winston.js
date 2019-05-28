@@ -31,10 +31,16 @@ var options = {
 };
 
 const myFormat = printf(info => {
+  function transformMsg(msg){
+    // if(typeof msg == "object"){
+    //   return JSON
+    // }
+    return JSON.stringify(msg)
+  }
   if(info.stack){
-    return `${info.timestamp} ${info.level}: ${info.message}\n${info.stack}`;
+    return `${info.timestamp} ${info.level}: ${transformMsg(info.message)}\n${info.stack}`;
   }else{
-    return `${info.timestamp} ${info.level}: ${info.message}`;
+    return `${info.timestamp} ${info.level}: ${transformMsg(info.message)}`;
   }
 });
 // instantiate a new Winston Logger with the settings defined above
