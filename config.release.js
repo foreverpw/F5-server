@@ -17,6 +17,6 @@ module.exports = {
   },
   soap:{
     url:'http://webscrmworkorder.gwmsystem.com:5691/WebChannel/WebChannels.asmx?wsdl',
-    identity:'IT2015'
+    identity:'IT201645568855'
   }
 };

@@ -67,6 +67,7 @@ try {
 
 var server = route(app);
 app.listen(config.server.port, function () {
+  logger.info(config.soap.identity)
 });
 
 console.log('start server successfully');
