@@ -30,6 +30,8 @@ exports.submitCRM = function (req, res) {
   }
   soap.createClient(url, function (err, client) {
     if(err){
+      logger.error(`soap createClient error:`)
+      logger.error(err)
       return res.json({code: ERRORCODE.CREATE_FAILED});
     }
     let soapHeader = {
@@ -39,10 +41,18 @@ exports.submitCRM = function (req, res) {
     };
     client.addSoapHeader(soapHeader, 'CustomSoapHeader', 'm', 'http://tempuri.org/');
     client.SaveChannelWithJson(para, function (err, result, rawResponse, soapHeader, rawRequest) {
+      logger.info(`soap SaveChannelWithJson result:`)
+      logger.info(result)
       if(err){
+        logger.error(`soap SaveChannelWithJson error:`)
+        logger.error(err)
         return res.json({code: ERRORCODE.CREATE_FAILED});
       }
-      return res.json({ code: ERRORCODE.SUCCESS, result: result });
+      if(result.SaveChannelWithJsonResult==0){
+        return res.json({ code: ERRORCODE.SUCCESS, result: result });
+      }else{
+        return res.json({ code: ERRORCODE.CREATE_FAILED, result: result });
+      }
     });
   });
 }
