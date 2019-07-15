@@ -19,7 +19,7 @@ exports.submitCRM = function (req, res) {
     "IntentBrandId": 69,        //品牌ID
     "IntentBrandName": "哈弗 F5", //品牌名称
     "Remark": "互联网广告",        //备注
-    "ActivitiesName": "虎扑APP-哈弗F5 5-6月互联网传播",  //渠道信息+活动周期+活动车型+活动描述
+    "ActivitiesName": "虎扑7-8月份哈弗F5传播活动",  //渠道信息+活动周期+活动车型+活动描述
     "OrderType": "整车"                       //售前线索-整车，售后-保养/预约/维修等
   }]
   var para = {
